@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="1000" height="720" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="720" fill="#ffffff"/>
+  <text x="40" y="46" font-size="22" font-weight="700" fill="#1b1b1b">Rota / Payroll Reconciliation — As-Is and To-Be</text>
+  <text x="40" y="70" font-size="13" fill="#5a5a5a">CQC-regulated domiciliary care provider · ~250 staff · monthly 4-week payroll cycle</text>
+  <line x1="40" y1="86" x2="960" y2="86" stroke="#d8d8d8" stroke-width="1"/>
+
+  <!-- AS-IS -->
+  <text x="40" y="120" font-size="15" font-weight="700" fill="#8a2f2f">AS-IS</text>
+  <text x="100" y="120" font-size="12" fill="#7a7a7a">manual, cycle-end detection</text>
+
+  <g stroke="#8a2f2f" fill="#fdf4f4">
+    <rect x="40" y="136" width="150" height="62" rx="4" stroke-width="1.5"/>
+    <rect x="222" y="136" width="150" height="62" rx="4" stroke-width="1.5"/>
+    <rect x="404" y="136" width="150" height="62" rx="4" stroke-width="1.5"/>
+    <rect x="586" y="136" width="150" height="62" rx="4" stroke-width="1.5"/>
+    <rect x="768" y="136" width="150" height="62" rx="4" stroke-width="1.5"/>
+  </g>
+  <g font-size="12" fill="#1b1b1b" text-anchor="middle">
+    <text x="115" y="162">Operations builds</text><text x="115" y="178">weekly rota</text>
+    <text x="297" y="162">Carers check in /</text><text x="297" y="178">out via care app</text>
+    <text x="479" y="162">Hours keyed into</text><text x="479" y="178">Excel at cycle end</text>
+    <text x="661" y="162">Payroll team spots</text><text x="661" y="178">discrepancies</text>
+    <text x="843" y="162">Manual correction,</text><text x="843" y="178">then pay run</text>
+  </g>
+  <g stroke="#8a2f2f" stroke-width="1.5" marker-end="url(#ar)">
+    <line x1="190" y1="167" x2="216" y2="167"/>
+    <line x1="372" y1="167" x2="398" y2="167"/>
+    <line x1="554" y1="167" x2="580" y2="167"/>
+    <line x1="736" y1="167" x2="762" y2="167"/>
+  </g>
+
+  <!-- pain points -->
+  <g font-size="11" fill="#8a2f2f" text-anchor="middle">
+    <text x="297" y="222">Rota changes not fed back</text>
+    <text x="479" y="222">~4 hrs rebuild, every week</text>
+    <text x="661" y="222">~14% of lines corrected</text>
+  </g>
+  <g stroke="#c98b8b" stroke-width="1" stroke-dasharray="3,3">
+    <line x1="297" y1="198" x2="297" y2="210"/>
+    <line x1="479" y1="198" x2="479" y2="210"/>
+    <line x1="661" y1="198" x2="661" y2="210"/>
+  </g>
+
+  <rect x="40" y="240" width="878" height="46" rx="4" fill="#faf0f0" stroke="#e0c0c0"/>
+  <text x="56" y="262" font-size="12" font-weight="700" fill="#8a2f2f">Core defect</text>
+  <text x="56" y="278" font-size="12" fill="#4a4a4a">Variance is discovered at cycle end, after the pay run is already being assembled — detection sits downstream of the point of correction.</text>
+
+  <line x1="40" y1="318" x2="960" y2="318" stroke="#d8d8d8"/>
+
+  <!-- TO-BE -->
+  <text x="40" y="352" font-size="15" font-weight="700" fill="#1f5c46">TO-BE</text>
+  <text x="112" y="352" font-size="12" fill="#7a7a7a">variance surfaced in-cycle, exception-driven</text>
+
+  <g stroke="#1f5c46" fill="#f2f8f5">
+    <rect x="40" y="368" width="150" height="62" rx="4" stroke-width="1.5"/>
+    <rect x="222" y="368" width="150" height="62" rx="4" stroke-width="1.5"/>
+    <rect x="404" y="368" width="150" height="62" rx="4" stroke-width="1.5"/>
+    <rect x="768" y="368" width="150" height="62" rx="4" stroke-width="1.5"/>
+  </g>
+  <polygon points="661,362 745,399 661,436 577,399" fill="#f2f8f5" stroke="#1f5c46" stroke-width="1.5"/>
+  <g font-size="12" fill="#1b1b1b" text-anchor="middle">
+    <text x="115" y="394">Operations builds</text><text x="115" y="410">weekly rota</text>
+    <text x="297" y="394">Carers check in /</text><text x="297" y="410">out via care app</text>
+    <text x="479" y="386">Scheduled export →</text><text x="479" y="402">reconciliation check:</text><text x="479" y="418" font-size="10.5">planned · actual · absence</text>
+    <text x="661" y="395">Variance</text><text x="661" y="411">within tolerance?</text>
+    <text x="843" y="394">Clean input to</text><text x="843" y="410">pay run</text>
+  </g>
+  <g stroke="#1f5c46" stroke-width="1.5" marker-end="url(#ag)">
+    <line x1="190" y1="399" x2="216" y2="399"/>
+    <line x1="372" y1="399" x2="398" y2="399"/>
+    <line x1="554" y1="399" x2="573" y2="399"/>
+    <line x1="745" y1="399" x2="762" y2="399"/>
+  </g>
+  <text x="754" y="391" font-size="11" fill="#1f5c46">Yes</text>
+
+  <!-- exception loop -->
+  <g stroke="#c07a1f" stroke-width="1.5" fill="none" marker-end="url(#ao)">
+    <path d="M 661 436 L 661 476 L 479 476 L 479 502"/>
+  </g>
+  <text x="676" y="458" font-size="11" fill="#c07a1f">No — exception raised in-cycle</text>
+  <rect x="374" y="502" width="210" height="54" rx="4" fill="#fdf7ee" stroke="#c07a1f" stroke-width="1.5"/>
+  <g font-size="12" fill="#1b1b1b" text-anchor="middle">
+    <text x="479" y="524">Coordinator resolves at source</text>
+    <text x="479" y="542">before payroll close</text>
+  </g>
+  <g stroke="#c07a1f" stroke-width="1.5" fill="none" marker-end="url(#ao)">
+    <path d="M 374 529 L 300 529 L 300 440"/>
+  </g>
+
+  <rect x="640" y="502" width="278" height="88" rx="4" fill="#f2f8f5" stroke="#1f5c46" stroke-width="1.5"/>
+  <text x="779" y="524" font-size="12" font-weight="700" fill="#1f5c46" text-anchor="middle">Power BI reporting suite</text>
+  <g font-size="11" fill="#3a3a3a" text-anchor="middle">
+    <text x="779" y="543">target vs delivered hours · hours lost by cause</text>
+    <text x="779" y="559">revenue by area · live staff count</text>
+    <text x="779" y="577">SLT weekly · coordinators daily · others monthly</text>
+  </g>
+  <g stroke="#1f5c46" stroke-width="1.5" stroke-dasharray="4,3" fill="none" marker-end="url(#ag)">
+    <path d="M 843 430 L 843 496"/>
+  </g>
+  <text x="853" y="466" font-size="11" fill="#1f5c46">reconciled data</text>
+
+  <rect x="40" y="616" width="878" height="66" rx="4" fill="#f4f8f6" stroke="#c3d8ce"/>
+  <text x="56" y="638" font-size="12" font-weight="700" fill="#1f5c46">Change that delivers the outcome</text>
+  <text x="56" y="656" font-size="12" fill="#4a4a4a">Detection moves upstream of the pay run, and the weekly report becomes a refresh rather than a rebuild.</text>
+  <text x="56" y="672" font-size="12" fill="#4a4a4a">Rebuild ~4 hrs → under 1 hr · discrepancies ~14% → below 5% · commissioner report ~18 hrs → ~3 hrs</text>
+
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#8a2f2f"/></marker>
+    <marker id="ag" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1f5c46"/></marker>
+    <marker id="ao" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c07a1f"/></marker>
+  </defs>
+</svg>

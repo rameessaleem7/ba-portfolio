@@ -1,0 +1,39 @@
+theme: jekyll-theme-modernist
+title: Ramees Saleem — Business Analyst
+description: Business Analyst portfolio — operations, data, and Power Platform delivery in UK regulated services.
+url: https://rameessaleem7.github.io
+baseurl: /ba-portfolio
+lang: en-GB
+
+# Used by jekyll-seo-tag for og:image and twitter:card.
+# Presence of an image makes seo-tag emit summary_large_image automatically.
+image: /ba-portfolio/assets/img/social-card.png
+
+author: Ramees Saleem
+
+twitter:
+  card: summary_large_image
+
+social:
+  name: Ramees Saleem
+  links:
+    - https://www.linkedin.com/in/ramees7
+    - https://github.com/rameessaleem7
+
+plugins:
+  - jekyll-sitemap
+# jekyll-seo-tag is already active — the Modernist theme calls {% seo %} in its
+# layout, which is why og: tags render today. Do NOT add it to plugins as well.
+
+show_downloads: false
+
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      last_updated: "2026-08-04"
