@@ -32,6 +32,14 @@ plugins:
   # declared here or every og:/meta tag silently disappears.
   - jekyll-seo-tag
 
+# GitHub Pages enables jekyll-titles-from-headings by default. It sets a page's
+# title from its first heading when front matter has none — so once the H1 moved
+# out of index.md into the masthead, the home page title became "BA Philosophy",
+# its first remaining heading. Interior pages set `title:` explicitly and are
+# unaffected either way.
+titles_from_headings:
+  enabled: false
+
 exclude:
   - README.md
   - LICENSE
