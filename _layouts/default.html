@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-GB' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+
+{% assign is_home = false %}
+{% if page.url == '/' or page.url == '/index.html' %}{% assign is_home = true %}{% endif %}
+
+<header class="masthead{% if is_home %} masthead--home{% endif %}">
+  <div class="wrap">
+    {% if is_home %}
+      <h1 class="masthead__name">Ramees Saleem</h1>
+      <p class="masthead__role">Business Analyst &mdash; Operations &amp; Data</p>
+      <p class="masthead__lede">I bridge senior leadership, technical delivery teams, and operations &mdash; turning complex requirements into things that get built and used.</p>
+    {% else %}
+      <a class="masthead__wordmark" href="{{ '/' | relative_url }}">Ramees Saleem</a>
+      <span class="masthead__wordmark-role">Business Analyst &mdash; Operations &amp; Data</span>
+    {% endif %}
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/skills/skills-matrix.html' | relative_url }}">Skills</a>
+    <a href="{{ '/case-studies/rota-payroll-reconciliation.html' | relative_url }}">Case Studies</a>
+    <a href="{{ '/roadmap.html' | relative_url }}">Roadmap</a>
+  </div>
+</nav>
+
+<main class="wrap page">
+  {{ content }}
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="footer__contact">
+      <a href="https://www.linkedin.com/in/ramees7">LinkedIn</a>
+      <span class="sep">&middot;</span>
+      <a href="mailto:rameessaleem7@gmail.com">rameessaleem7@gmail.com</a>
+    </p>
+    <p class="footer__note">Case studies are published in anonymised form. Client identity and system vendors are withheld by design.</p>
+  </div>
+</footer>
+
+</body>
+</html>

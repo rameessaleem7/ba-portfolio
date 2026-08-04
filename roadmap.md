@@ -3,8 +3,6 @@ title: Roadmap 2026–2029
 description: A dated business analysis development plan — four certifications in progress in 2026, then a focused progression into process improvement and governed AI-assisted delivery.
 ---
 
-[Home](./) · [Skills matrix](skills/skills-matrix.html) · [Case studies](./#what-ive-done)
-
 # Roadmap 2026–2029
 
 A dated development plan, reviewed against delivery — not a wishlist.

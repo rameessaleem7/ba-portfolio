@@ -3,8 +3,6 @@ title: "Case Study: Inspection-Readiness Tracking Model"
 description: Designing a matrix-based tracking model to make regulatory inspection readiness measurable across staff files, training, appraisals, and supervision.
 ---
 
-[Home](../) · [Skills matrix](../skills/skills-matrix.html) · [Roadmap](../roadmap.html)
-
 # Case Study: Inspection-Readiness Tracking Model
 
 **Context:** the same CQC-regulated UK domiciliary care provider. Preparing for a regulatory inspection covering six evidence areas across a 136-file staff estate.

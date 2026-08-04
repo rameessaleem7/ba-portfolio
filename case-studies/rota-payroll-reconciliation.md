@@ -3,8 +3,6 @@ title: "Case Study: Rota / Payroll Reconciliation"
 description: Reconciling rostering data against payroll at a CQC-regulated domiciliary care provider — as-is process, what was built, measured outcomes, and adoption.
 ---
 
-[Home](../) · [Skills matrix](../skills/skills-matrix.html) · [Roadmap](../roadmap.html)
-
 # Case Study: Rota / Payroll Reconciliation
 
 **Context:** a CQC-regulated UK domiciliary care provider — approximately 250 staff and 300+ clients, operating under a local authority framework contract. Client identity and system vendors are withheld; the analytical work is described in full.

@@ -3,8 +3,6 @@ title: Skills Matrix
 description: A three-tier skills matrix separating proven delivery, working knowledge, and in-progress development — with evidence links for each proven skill.
 ---
 
-[Home](../) · [Case studies](../#what-ive-done) · [Roadmap](../roadmap.html)
-
 # Skills Matrix
 
 The three tiers below are kept deliberately separate: accurate scoping of one's own capability is itself a BA competency, and blending aspiration with delivery would defeat the point.

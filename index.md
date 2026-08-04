@@ -2,17 +2,9 @@
 # No `title:` here on purpose. jekyll-seo-tag renders "{{ page.title }} | {{ site.title }}",
 # which is what produced "Ramees Saleem | Ramees Saleem — Business Analyst".
 # Omitting it makes the home page title simply the site title.
+# The name, role, and positioning line are rendered by the masthead in
+# _layouts/default.html — do not repeat them here.
 description: Business Analyst working across operations, data, and Power Platform delivery in UK regulated services. Case studies, skills matrix, and a dated development roadmap.
----
-
-[Home](./) · [Skills matrix](skills/skills-matrix.html) · [Case studies](#what-ive-done) · [Roadmap](roadmap.html)
-
-# Ramees Saleem
-
-**Business Analyst — Operations & Data**
-
-I bridge senior leadership, technical delivery teams, and operations — turning complex requirements into things that get built and used.
-
 ---
 
 ## BA Philosophy
@@ -43,12 +35,12 @@ Four certifications in progress now, then a focused progression into process imp
 
 ## Contact
 
-- LinkedIn: [linkedin.com/in/ramees7](https://www.linkedin.com/in/ramees7)
-- Email: [rameessaleem7 [at] gmail.com](mailto:rameessaleem7@gmail.com)
+- **LinkedIn** — [linkedin.com/in/ramees7](https://www.linkedin.com/in/ramees7)
+- **Email** — [rameessaleem7@gmail.com](mailto:rameessaleem7@gmail.com)
 
 <!-- TODO — uncomment once assets/cv/ramees-saleem-cv.pdf exists. A 404 on a CV link
      costs more than the missing link does.
-- CV: [Download (PDF)](assets/cv/ramees-saleem-cv.pdf)
+- **CV** — [Download (PDF)](assets/cv/ramees-saleem-cv.pdf)
 -->
 
 <sub>Last updated: {{ page.last_updated }}</sub>

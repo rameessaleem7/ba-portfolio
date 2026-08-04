@@ -1,0 +1,357 @@
+/* ------------------------------------------------------------------
+   Ramees Saleem — BA portfolio
+   Typography: Calibri, with metric-compatible fallbacks. Calibri is a
+   licensed Microsoft font and cannot be self-hosted; Carlito is metrically
+   identical and ships with LibreOffice, Candara/Segoe UI are close humanist
+   substitutes on Windows, and Optima covers macOS.
+   ------------------------------------------------------------------ */
+
+:root {
+  --paper:      #fbfaf7;
+  --paper-warm: #f4f2ec;
+  --ink:        #22262a;
+  --ink-soft:   #4a5258;
+  --muted:      #6d7671;
+  --accent:     #1f5c46;
+  --accent-lit: #2d7a5e;
+  --rule:       #e2ded4;
+  --rule-soft:  #ece9e1;
+
+  --measure: 44rem;
+  --font: Calibri, Carlito, Candara, "Segoe UI", Optima, system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 1.075rem;
+  line-height: 1.72;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-warm);
+}
+
+.masthead--home .wrap {
+  padding-top: 4.25rem;
+  padding-bottom: 3.25rem;
+  text-align: center;
+}
+
+.masthead__name {
+  margin: 0;
+  font-size: clamp(2.4rem, 6vw, 3.35rem);
+  font-weight: 300;
+  letter-spacing: 0.045em;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.masthead__role {
+  margin: 0.85rem 0 0;
+  font-size: 0.83rem;
+  font-weight: 600;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.masthead__lede {
+  margin: 1.6rem auto 0;
+  max-width: 34rem;
+  font-size: 1.075rem;
+  line-height: 1.68;
+  color: var(--ink-soft);
+}
+
+/* compact wordmark on interior pages */
+.masthead:not(.masthead--home) .wrap {
+  padding-top: 1.5rem;
+  padding-bottom: 1.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.9rem;
+}
+
+.masthead__wordmark {
+  font-size: 1.16rem;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.masthead__wordmark:hover { color: var(--accent); }
+
+.masthead__wordmark-role {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ---------- nav ---------- */
+
+.nav {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav .wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.1rem;
+  padding-top: 0.95rem;
+  padding-bottom: 0.95rem;
+}
+
+.nav a {
+  font-size: 0.735rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- page body ---------- */
+
+.page {
+  padding-top: 3.25rem;
+  padding-bottom: 4rem;
+}
+
+.page > h1:first-child { margin-top: 0; }
+
+h1, h2, h3, h4 {
+  color: var(--ink);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.page h1 {
+  font-size: clamp(1.9rem, 4.4vw, 2.4rem);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  margin: 0 0 1.9rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.page h2 {
+  font-size: 0.83rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 3.1rem 0 1.15rem;
+}
+
+.page h3 {
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin: 2.2rem 0 0.7rem;
+}
+
+p { margin: 0 0 1.25rem; }
+
+strong { font-weight: 600; color: var(--ink); }
+
+em { font-style: italic; }
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: rgba(31, 92, 70, 0.35);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-lit);
+  text-decoration-color: var(--accent-lit);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2.75rem 0;
+}
+
+/* lists */
+
+ul, ol { margin: 0 0 1.35rem; padding-left: 1.35rem; }
+li { margin-bottom: 0.5rem; }
+li::marker { color: var(--muted); }
+ul ul, ol ol, ul ol, ol ul { margin: 0.5rem 0 0.35rem; }
+
+/* ---------- tables: editorial rules, no boxes ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.6rem 0 2rem;
+  font-size: 0.985rem;
+}
+
+thead th {
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 0.9rem 0.6rem 0;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+tbody td {
+  padding: 0.72rem 0.9rem 0.72rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  vertical-align: top;
+}
+
+tbody tr:last-child td { border-bottom: 1px solid var(--rule); }
+
+thead th:last-child, tbody td:last-child { padding-right: 0; }
+
+/* wide tables scroll rather than break the page */
+.table-scroll { overflow-x: auto; }
+
+/* ---------- images and figures ---------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.75rem auto;
+  border: 1px solid var(--rule);
+}
+
+/* ---------- code ---------- */
+
+code {
+  font-family: Consolas, "SF Mono", Menlo, monospace;
+  font-size: 0.9em;
+  background: var(--paper-warm);
+  padding: 0.12em 0.36em;
+  border-radius: 2px;
+}
+
+pre {
+  background: var(--paper-warm);
+  border: 1px solid var(--rule);
+  padding: 1rem 1.15rem;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+pre code { background: none; padding: 0; }
+
+blockquote {
+  margin: 1.75rem 0;
+  padding-left: 1.35rem;
+  border-left: 2px solid var(--accent);
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* "Last updated" line */
+sub {
+  display: block;
+  margin-top: 3rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 0.78rem;
+  color: var(--muted);
+  vertical-align: baseline;
+}
+
+/* ---------- footer ---------- */
+
+.footer {
+  border-top: 1px solid var(--rule);
+  background: var(--paper-warm);
+}
+
+.footer .wrap {
+  padding-top: 2.4rem;
+  padding-bottom: 2.6rem;
+  text-align: center;
+}
+
+.footer__contact {
+  margin: 0 0 0.7rem;
+  font-size: 0.95rem;
+}
+
+.footer__contact .sep { color: var(--rule); margin: 0 0.55rem; }
+
+.footer__note {
+  margin: 0;
+  font-size: 0.79rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 34rem) {
+  body { font-size: 1.02rem; }
+  .wrap { padding: 0 1.25rem; }
+  .masthead--home .wrap { padding-top: 3rem; padding-bottom: 2.4rem; }
+  .nav .wrap { gap: 1.3rem; }
+  .nav a { font-size: 0.685rem; letter-spacing: 0.11em; }
+  table { font-size: 0.93rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  .nav, .footer__note { display: none; }
+  body { background: #fff; font-size: 11pt; line-height: 1.5; }
+  .masthead { background: none; }
+  a { color: var(--ink); text-decoration: none; }
+  .page { padding-top: 1.5rem; }
+  h2, h3 { break-after: avoid; }
+  table, figure, img { break-inside: avoid; }
+}

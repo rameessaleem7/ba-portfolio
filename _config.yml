@@ -1,4 +1,6 @@
-theme: jekyll-theme-modernist
+# No `theme:` — the site uses its own _layouts/default.html and
+# assets/css/main.css. The Modernist theme was removed: its fixed styling
+# could not be taken to the intended typographic quality.
 title: Ramees Saleem — Business Analyst
 # seo-tag builds the home page title as "title | tagline", falling back to
 # `description` when no tagline is set — which produced a 135-character title.
@@ -25,10 +27,10 @@ social:
 
 plugins:
   - jekyll-sitemap
-# jekyll-seo-tag is already active — the Modernist theme calls {% seo %} in its
-# layout, which is why og: tags render today. Do NOT add it to plugins as well.
-
-show_downloads: false
+  # Required now that the theme is gone: seo-tag used to be pulled in by the
+  # Modernist layout. Our own layout calls {% seo %}, so the plugin must be
+  # declared here or every og:/meta tag silently disappears.
+  - jekyll-seo-tag
 
 exclude:
   - README.md
@@ -39,6 +41,7 @@ defaults:
   - scope:
       path: ""
     values:
+      layout: default
       last_updated: "2026-08-04"
       # Page-level image is what makes seo-tag emit og:image and upgrade the
       # Twitter card to summary_large_image. Path must be root-relative WITHOUT
