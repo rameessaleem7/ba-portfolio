@@ -10,7 +10,7 @@ lang: en-GB
 
 # seo-tag reads `image` from PAGE front matter, not site config — a site-level
 # key alone emits no og:image. It is set per page via `defaults` at the bottom.
-image: /ba-portfolio/assets/img/social-card.png
+image: /assets/img/social-card.png
 
 # Mapping, not a bare string: a string here was being read as a Twitter handle
 # and rendered as twitter:creator = "@Ramees Saleem".
@@ -41,5 +41,7 @@ defaults:
     values:
       last_updated: "2026-08-04"
       # Page-level image is what makes seo-tag emit og:image and upgrade the
-      # Twitter card to summary_large_image. Absolute path, not baseurl-relative.
-      image: /ba-portfolio/assets/img/social-card.png
+      # Twitter card to summary_large_image. Path must be root-relative WITHOUT
+      # the baseurl — seo-tag runs it through absolute_url, which prepends
+      # baseurl itself. Including it here yields /ba-portfolio/ba-portfolio/...
+      image: /assets/img/social-card.png
