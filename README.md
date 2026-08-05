@@ -2,7 +2,7 @@
 
 Source for **[rameessaleem7.github.io/ba-portfolio](https://rameessaleem7.github.io/ba-portfolio/)** — the Business Analyst portfolio of Ramees Saleem (Operations & Data).
 
-Built with Jekyll on GitHub Pages, using the Modernist theme.
+Built with Jekyll on GitHub Pages, using a custom layout (`_layouts/default.html`) and stylesheet (`assets/css/main.css`) rather than a packaged theme.
 
 ## Contents
 
@@ -13,6 +13,7 @@ Built with Jekyll on GitHub Pages, using the Modernist theme.
 | Case study — rota / payroll reconciliation | `case-studies/rota-payroll-reconciliation.md` |
 | Case study — inspection-readiness tracking | `case-studies/inspection-readiness-tracking.md` |
 | Roadmap 2026–2029 | `roadmap.md` |
+| As-is / to-be process map | `assets/diagrams/rota-payroll-process-map.svg` |
 
 ## Notes
 
