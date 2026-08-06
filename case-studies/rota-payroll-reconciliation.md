@@ -57,10 +57,7 @@ description: Reconciling rostering data against payroll at a CQC-regulated domic
 | Payroll discrepancies per monthly cycle | ~14% | Below 5% |
 | Six-monthly commissioner report | ~18 hrs | ~3 hrs |
 
-<!-- ACTION REQUIRED — replace the bracketed values below with the real basis before publishing.
-     This single note replaces the three separate "figures are approximate" disclaimers. -->
-
-**How these were measured.** Rebuild time is the coordinator's own logged time on the weekly report, compared across [N] cycles before and after go-live. Payroll discrepancy rate is the count of corrected pay lines as a proportion of pay lines processed per monthly cycle, taken from [source]. Commissioner reporting time is elapsed preparation time recorded for the [period] and [period] submissions. Figures are rounded to the nearest hour or whole percentage point; staff and client counts move continuously with recruitment and intake.
+**How these were measured.** Rebuild time is the coordinator's own logged time on the weekly report, compared across four payroll cycles before go-live and two after. Payroll discrepancy rate is the count of corrected pay lines as a proportion of pay lines processed per monthly cycle, established by cross-checking rostered hours against clocked in/out times. Commissioner reporting time is elapsed preparation time recorded for the February 2025 and August 2025 submissions, compared with the February 2026 submission after go-live. Figures are rounded to the nearest hour or whole percentage point; staff and client counts move continuously with recruitment and intake.
 
 ## Stakeholder Adoption
 
