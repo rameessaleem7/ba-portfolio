@@ -23,7 +23,7 @@ Proven delivery with Power BI, Advanced Excel, and Power Query, with working kno
 
 ## What I've done
 
-**[Rota / payroll reconciliation and Power BI reporting suite](case-studies/rota-payroll-reconciliation.html)** — a CQC-regulated UK domiciliary care provider (~250 staff, 300+ clients). Weekly report rebuild cut from ~4 hours to under 1 hour; payroll discrepancies from ~14% to below 5%; commissioner reporting from ~18 hours to ~3.
+**[Rota / payroll reconciliation and Power BI reporting suite](case-studies/rota-payroll-reconciliation.html)** — a CQC-regulated UK domiciliary care provider (~250 staff, 300 clients). Carers with a corrected pay line: 13.1–16.7% before go-live → 3.2–3.6% after, stable across three post cycles.
 
 **[Inspection-readiness tracking model](case-studies/inspection-readiness-tracking.html)** — designed the matrix structure and gap-detection logic used to track staff files, training, appraisals, and supervision against regulatory requirements across a 136-file estate.
 

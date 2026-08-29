@@ -1,78 +1,52 @@
 ---
 title: "Case Study: Rota / Payroll Reconciliation"
-description: Reconciling rostering data against payroll at a CQC-regulated domiciliary care provider — as-is process, what was built, measured outcomes, and adoption.
+description: Reconciling rostering data against payroll at a CQC-regulated domiciliary care provider — as-is process, what was built, measured outcomes, and known limits.
 ---
 
 # Case Study: Rota / Payroll Reconciliation
 
-**Context:** a CQC-regulated UK domiciliary care provider — approximately 250 staff and 300+ clients, operating under a local authority framework contract. Client identity and system vendors are withheld; the analytical work is described in full.
+**Context:** a CQC-regulated UK domiciliary/residential care provider — approximately 250 staff and 300 clients. Client identity and system vendors are withheld; the analytical work is described in full. All data in this case study is synthetic — figures are generated to match the shape of a production delivery, not its actual records.
 
-**My role:** Business Analyst — elicitation, as-is mapping, reconciliation logic, dashboard build, stakeholder sign-off, and role-based training.
+**My role:** Business Analyst — elicitation, as-is mapping, metric definition, reconciliation logic, dashboard build, and measurement.
 
 ## Problem
 
-- Rostering data did not reconcile with payroll hours.
-- A coordinator manually rebuilt the same weekly rota report every week.
-- Six-monthly commissioner reporting required manual data assembly from multiple sources.
-- Root causes: last-minute rota changes, newly onboarded clients, and unplanned extra hours — none of which flowed back into the payroll input.
+Rota data and payroll hours did not reconcile. Three things broke the link:
 
-## As-Is Process
+1. **Ad-hoc hours** added mid-day at client request (e.g. an extra shopping call) — these need council sanction, and sanction lags, so hours were worked before anyone was sure they'd be funded.
+2. **Late rota changes** made after the export was taken.
+3. **New client visits** missing from the export entirely.
 
-1. Operations builds the weekly rota in the care management system.
-2. Carers check in and out via the linked mobile care app.
-3. Hours are manually keyed into Excel at the end of each four-week payroll cycle.
-4. The HR system covers absence and holiday only — it holds no delivered-hours data.
-5. The payroll team manually spots and corrects discrepancies.
+Discrepancies were found downstream by the payroll team and corrected by hand, one line at a time, after the four-week cycle closed. Nobody could say how often it happened or which way the money went.
 
-→ [As-is / to-be process map (SVG)](../assets/diagrams/rota-payroll-process-map.svg)
+![Power BI dashboard — reconciliation overview. All data synthetic.](../assets/img/dashboard-overview.png)
+*Screenshot uses synthetic data generated to match the shape of a production delivery; no real client or employee information is shown.*
 
-## What Was Built
+## What I Did
 
-- **Reconciliation check** comparing planned vs actual vs absence hours, flagging variances above tolerance for review before payroll close.
-- **Power BI dashboard** built on scheduled system exports, tracking:
-  * monthly target hours against delivered hours
-  * where hours are lost, by cause and by area
-  * revenue by operating area
-  * live staff count
+| Stage | Output |
+|---|---|
+| Elicitation | Interviews with payroll, care coordinators, operations; walked the as-is from rota build to payslip |
+| Analysis | As-is process map; root-cause classification of every correction in four pay cycles |
+| Definition | A metric definitions sheet — one unit throughout (one carer in one cycle, never correction rows), denominator, thresholds and reason taxonomy |
+| Solution | An authorisation check: where operations authorises ad-hoc hours with the required documents, the evidence is captured and carried into the model, so payroll doesn't miss the hours |
+| Delivery | Reconciliation logic + executive dashboard; role-based training for each user group |
+| Measurement | Three cycles post-go-live against four pre |
 
-<!-- TODO — uncomment the two lines below once you have saved a redacted screenshot to
-     assets/img/dashboard-overview.png (blur or replace employee names, client names and
-     real client volumes with sample data). Left commented out deliberately: a broken image
-     is worse than no image, and a visible placeholder is what this rewrite removed.
-![Power BI dashboard — reconciliation overview. Names and client volumes replaced with sample data.](../assets/img/dashboard-overview.png)
-*Screenshot uses substituted sample data; no real client or employee information is shown.*
--->
+## Result
 
-**Delivery approach:**
+- Carers with at least one corrected pay line: **13.1–16.7%** of those paid before go-live → **3.2–3.6%** after (stable across three post cycles)
+- Carers affected per cycle: **35.8 → 8.3**
+- Largest cause (ad-hoc hours authorised late) fell **60 → 3** carers — the failure the check was built to catch
 
-- Approved by a director and the registered manager from a mock-up; the deputy manager reviewed pre-go-live.
-- Role-based training delivered per employee group, framed around each group's own outcomes rather than the tool.
-- Advised senior management on adoption and the future improvement direction.
+## What It Doesn't Prove
 
-## Outcomes
+Three cycles, two of them across Christmas — an atypical rota period. The check shipped alongside coordinator training and a process change, so the result belongs to all three; this build can't separate prevention from earlier detection. Cash figures use one blended hourly rate and don't reconcile to a ledger. Full caveats and every metric definition are in [METRIC-DEFINITIONS.md](METRIC-DEFINITIONS.md).
 
-| Measure | Before | After |
-| --- | --- | --- |
-| Weekly rota report rebuild | ~4 hrs | Under 1 hr |
-| Payroll discrepancies per monthly cycle | ~14% | Below 5% |
-| Six-monthly commissioner report | ~18 hrs | ~3 hrs |
+## Two BA Decisions Worth the Space
 
-<!-- ACTION REQUIRED — replace the bracketed values below with the real basis before publishing.
-     This single note replaces the three separate "figures are approximate" disclaimers. -->
+**Underpaid and overpaid were never netted.** 126 carer-cycles underpaid, 42 overpaid. An underpaid hour is a liability the moment it occurs — NMW is assessed per pay reference period, so a later correction doesn't undo it. An overpaid hour is a receivable requiring a recovery conversation. A single net figure would have hidden who was affected.
 
-**How these were measured.** Rebuild time is the coordinator's own logged time on the weekly report, compared across [N] cycles before and after go-live. Payroll discrepancy rate is the count of corrected pay lines as a proportion of pay lines processed per monthly cycle, taken from [source]. Commissioner reporting time is elapsed preparation time recorded for the [period] and [period] submissions. Figures are rounded to the nearest hour or whole percentage point; staff and client counts move continuously with recruitment and intake.
-
-## Stakeholder Adoption
-
-| Group | Usage |
-| --- | --- |
-| Senior management | Weekly |
-| Coordinators / operations | Daily |
-| Other departments | Monthly |
-
-## What I'd Do Differently
-
-- Metric definitions were never written down — the reconciliation logic lived in the file and in my head. A one-page definitions sheet should have been a go-live deliverable, not an afterthought.
-- Proactive missed and late call detection was scoped but not delivered in this phase; it remains in development with the operations team.
+**A panel was removed rather than caveated.** An earlier build inferred under-allocation from contracted hours per carer. The data couldn't support it — allocated package hours exclude travel, breaks and care-home shifts, and contracted staff are filled to their hours first by design. The honest fix was deletion, not a footnote.
 
 <sub>Last updated: {{ page.last_updated }}</sub>

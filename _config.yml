@@ -50,7 +50,7 @@ defaults:
       path: ""
     values:
       layout: default
-      last_updated: "2026-08-04"
+      last_updated: "2026-08-29"
       # Page-level image is what makes seo-tag emit og:image and upgrade the
       # Twitter card to summary_large_image. Path must be root-relative WITHOUT
       # the baseurl — seo-tag runs it through absolute_url, which prepends
