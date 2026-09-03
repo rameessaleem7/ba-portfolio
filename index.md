@@ -25,8 +25,6 @@ Proven delivery with Power BI, Advanced Excel, and Power Query, with working kno
 
 **[Rota / payroll reconciliation and Power BI reporting suite](case-studies/rota-payroll-reconciliation.html)** — a CQC-regulated UK domiciliary care provider (~250 staff, 300 clients). Carers with a corrected pay line: 13.1–16.7% before go-live → 3.2–3.6% after, stable across three post cycles.
 
-**[Inspection-readiness tracking model](case-studies/inspection-readiness-tracking.html)** — designed the matrix structure and gap-detection logic used to track staff files, training, appraisals, and supervision against regulatory requirements across a 136-file estate.
-
 ## Where I'm headed
 
 Four certifications in progress now, then a focused progression into process improvement and governed AI-assisted delivery across UK and GCC markets.
