@@ -19,8 +19,8 @@ Rota data and payroll hours did not reconcile. Three things broke the link:
 
 Discrepancies were found downstream by the payroll team and corrected by hand, one line at a time, after the four-week cycle closed. Nobody could say how often it happened or which way the money went.
 
-![Power BI dashboard — reconciliation overview. All data synthetic.](../assets/img/dashboard-overview.png)
-*Screenshot uses synthetic data generated to match the shape of a production delivery; no real client or employee information is shown.*
+![Power BI dashboard — full executive summary view, headline metrics, cause breakdown, and open corrections. All data synthetic.](../assets/img/dashboard-overview.png)
+*Full dashboard. Screenshot uses synthetic data generated to match the shape of a production delivery; no real client or employee information is shown.*
 
 ## What I Did
 
@@ -37,6 +37,9 @@ Discrepancies were found downstream by the payroll team and corrected by hand, o
 
 - Carers with at least one corrected pay line: **13.1–16.7%** of those paid before go-live → **3.2–3.6%** after (stable across three post cycles)
 - Carers affected per cycle: **35.8 → 8.3**
+
+![Trend chart — carers affected as a share of those paid, by pay cycle, split at the go-live boundary. All data synthetic.](../assets/img/dashboard-trend-chart.png)
+*The headline trend, close up.*
 - Largest cause (ad-hoc hours authorised late) fell **60 → 3** carers — the failure the check was built to catch
 
 ## What It Doesn't Prove
