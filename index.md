@@ -35,10 +35,6 @@ Four certifications in progress now, then a focused progression into process imp
 
 - **LinkedIn** — [linkedin.com/in/ramees7](https://www.linkedin.com/in/ramees7)
 - **Email** — [rameessaleem7@gmail.com](mailto:rameessaleem7@gmail.com)
-
-<!-- TODO — uncomment once assets/cv/ramees-saleem-cv.pdf exists. A 404 on a CV link
-     costs more than the missing link does.
 - **CV** — [Download (PDF)](assets/cv/ramees-saleem-cv.pdf)
--->
 
 <sub>Last updated: {{ page.last_updated }}</sub>
