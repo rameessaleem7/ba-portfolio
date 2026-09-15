@@ -31,7 +31,7 @@ The three tiers below are kept deliberately separate: accurate scoping of one's 
 | Microsoft Copilot in Power BI and Power Platform | In use for drafting and exploration; outputs verified against source before release |
 | PL-300 (Power BI Data Analyst) | Certification in progress |
 | AZ-900 (Azure Fundamentals) | Certification in progress |
-| AI-900 (Azure AI Fundamentals) | Certification in progress |
+| AI-901 (Azure AI Fundamentals) | Certification in progress |
 | ECBA (Entry Certificate in Business Analysis) | Certification in progress |
 
 For where these developing items sit in the wider plan, see the [Roadmap 2026–2029](../roadmap.html).

@@ -15,10 +15,10 @@ Self-funded 16-week certification programme, currently underway:
 | --- | --- | --- |
 | **PL-300** | Power BI Data Analyst | 2026 |
 | **AZ-900** | Azure Fundamentals | 2026 |
-| **AI-900** | Azure AI Fundamentals | 2026 |
+| **AI-901** | Azure AI Fundamentals | 2026 |
 | **ECBA** | Entry Certificate in Business Analysis | 2026 |
 
-Each maps directly to work already in delivery: PL-300 and AZ-900 to the reporting stack, AI-900 to AI-assisted analysis, ECBA to formalising the elicitation and documentation practice.
+Each maps directly to work already in delivery: PL-300 and AZ-900 to the reporting stack, AI-901 to AI-assisted analysis, ECBA to formalising the elicitation and documentation practice.
 
 ## Next — 2027–2029
 
