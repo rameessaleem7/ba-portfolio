@@ -8,4 +8,4 @@
 
 Static images only — no live dashboard embeds.
 
-To add the dashboard image: save a redacted PNG to `img/dashboard-overview.png`, then uncomment the commented-out image block in `case-studies/rota-payroll-reconciliation.md`. Blur or substitute employee names, client names, and real client volumes with sample data before committing anything exported from a production system.
+`img/dashboard-overview.png` is a screenshot of the reconciliation dashboard, generated from synthetic data (see `case-studies/METRIC-DEFINITIONS.md`) — no real client or employee information. Any future replacement should stay a static image, not a link to the underlying HTML file.

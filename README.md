@@ -11,7 +11,6 @@ Built with Jekyll on GitHub Pages, using a custom layout (`_layouts/default.html
 | Home | `index.md` |
 | Skills matrix | `skills/skills-matrix.md` |
 | Case study — rota / payroll reconciliation | `case-studies/rota-payroll-reconciliation.md` |
-| Case study — inspection-readiness tracking | `case-studies/inspection-readiness-tracking.md` |
 | Roadmap 2026–2029 | `roadmap.md` |
 | As-is / to-be process map | `assets/diagrams/rota-payroll-process-map.svg` |
 

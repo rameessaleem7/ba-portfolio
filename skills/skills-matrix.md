@@ -12,7 +12,7 @@ The three tiers below are kept deliberately separate: accurate scoping of one's 
 | Skill | Evidence |
 | --- | --- |
 | Power BI | Live operational dashboard in daily and weekly use — see [case study](../case-studies/rota-payroll-reconciliation.html) |
-| Advanced Excel | Payroll reconciliation and multi-matrix tracking models — see [reconciliation](../case-studies/rota-payroll-reconciliation.html) and [inspection readiness](../case-studies/inspection-readiness-tracking.html) |
+| Advanced Excel | Payroll reconciliation model — see [reconciliation](../case-studies/rota-payroll-reconciliation.html) |
 | Power Query | Data transformation layer behind the reconciliation and dashboard builds |
 | Requirements elicitation & process mapping | As-is / to-be mapping and stakeholder sign-off — see [process map](../assets/diagrams/rota-payroll-process-map.svg) |
 
