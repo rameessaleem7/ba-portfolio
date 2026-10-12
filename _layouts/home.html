@@ -1,0 +1,137 @@
+---
+layout: default
+---
+{% assign tools_a = "Power BI|Advanced Excel|Power Query|Power Automate|SQL|Microsoft 365" | split: "|" %}
+{% assign tools_b = "Process Mapping|Elicitation|Metric Definitions|Copilot|Stakeholder Mgmt|Documentation" | split: "|" %}
+
+<main>
+<section class="hero" id="top">
+  <header class="hero__head">
+    <div>
+      <h1 class="hero__title"><span class="w">Hi,</span> <span class="w">I'm</span> <span class="w">Ramees!</span></h1>
+      <p class="hero__lede reveal">A Business Analyst working across operations, data, and Power Platform delivery in UK regulated services &mdash; turning complex requirements into things that get built and used.</p>
+    </div>
+    <a class="pill reveal" href="mailto:rameessaleem7@gmail.com">Let's Talk Today</a>
+  </header>
+
+  <div class="bento">
+
+    <!-- Roadmap / background -->
+    <article class="card card--tall card--photo reveal" style="--d:0ms">
+      <div class="aurora aurora--a" aria-hidden="true"></div>
+      <div class="card__label"><i class="spark"></i> Background <i class="spark"></i></div>
+      <div class="card__stack">
+        <p class="card__big">Business Analyst<br>Operations &amp; Data</p>
+        <p class="card__small">Bridging senior leadership, technical delivery, and day-to-day operations.</p>
+        <ol class="timeline">
+          <li><b>2026</b><i class="spark"></i><span>Four certifications</span></li>
+          <li><b>2027</b><i class="spark"></i><span>Six Sigma Green Belt</span></li>
+          <li><b>2028</b><i class="spark"></i><span>Copilot Studio</span></li>
+          <li><b>2029</b><i class="spark"></i><span>AI governance</span></li>
+        </ol>
+      </div>
+    </article>
+
+    <!-- Philosophy -->
+    <article class="card card--teal reveal" style="--d:80ms">
+      <p class="eyebrow">BA Philosophy</p>
+      <blockquote class="quote">&ldquo;A strong BA absorbs and resolves ambiguity rather than passing it downstream.&rdquo;</blockquote>
+      <a class="muted-link" href="#about">Read more</a>
+    </article>
+
+    <!-- Stat -->
+    <article class="card card--photo card--stat reveal" style="--d:160ms">
+      <div class="aurora aurora--b" aria-hidden="true"></div>
+      <div class="card__stack">
+        <p class="stat">
+          <span class="count" data-from="16.7" data-to="3.2" data-dec="1">3.2</span>&ndash;<span class="count" data-from="16.7" data-to="3.6" data-dec="1">3.6</span>%
+        </p>
+        <p class="card__small">Carers with a corrected pay line, down from 13.1&ndash;16.7% before go-live. Stable across three pay cycles.</p>
+        <a class="muted-link" href="{{ '/case-studies/rota-payroll-reconciliation.html' | relative_url }}">Read the case study &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Toolkit -->
+    <article class="card card--photo card--tools reveal" style="--d:120ms">
+      <div class="aurora aurora--c" aria-hidden="true"></div>
+      <div class="card__stack card__stack--top">
+        <p class="eyebrow">Daily Toolkit</p>
+        <p class="card__small">Tools I reach for when shaping data, reporting, and process.</p>
+      </div>
+      <div class="marquees" aria-label="Tools and methods">
+        <div class="marquee marquee--left">
+          <div class="marquee__track">
+            {% for pass in (1..2) %}{% for t in tools_a %}<span class="glass tile" {% if pass == 2 %}aria-hidden="true"{% endif %}><b>{{ t | slice: 0, 2 }}</b><em>{{ t }}</em></span>{% endfor %}{% endfor %}
+          </div>
+        </div>
+        <div class="marquee marquee--right">
+          <div class="marquee__track">
+            {% for pass in (1..2) %}{% for t in tools_b %}<span class="glass tile" {% if pass == 2 %}aria-hidden="true"{% endif %}><b>{{ t | slice: 0, 2 }}</b><em>{{ t }}</em></span>{% endfor %}{% endfor %}
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Reach me -->
+    <article class="card card--teal card--reach reveal" style="--d:200ms">
+      <div>
+        <p class="eyebrow">Reach Me</p>
+        <p class="reach__lines">
+          <a href="mailto:rameessaleem7@gmail.com">rameessaleem7@gmail.com</a><br>
+          <a href="https://www.linkedin.com/in/ramees7">linkedin.com/in/ramees7</a><br>
+          United Kingdom
+        </p>
+      </div>
+      <a class="arrow glass" href="mailto:rameessaleem7@gmail.com" aria-label="Email Ramees">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </article>
+
+  </div>
+</section>
+
+<section class="block" id="work">
+  <div class="block__inner">
+    <p class="eyebrow reveal">Selected Work</p>
+    <a class="work card card--photo reveal" href="{{ '/case-studies/rota-payroll-reconciliation.html' | relative_url }}">
+      <div class="aurora aurora--b" aria-hidden="true"></div>
+      <div class="work__body">
+        <h2>Rota / payroll reconciliation and Power BI reporting suite</h2>
+        <p>A CQC-regulated UK domiciliary care provider (~250 staff, 300 clients). Carers with a corrected pay line fell from <strong>13.1&ndash;16.7%</strong> before go-live to <strong>3.2&ndash;3.6%</strong> after, stable across three post cycles.</p>
+        <ul class="chips"><li>Power BI</li><li>Power Query</li><li>Advanced Excel</li><li>Process mapping</li></ul>
+      </div>
+      <span class="arrow glass" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<section class="block" id="about">
+  <div class="block__inner prose-home">
+    <h2 class="reveal">About</h2>
+    <p class="reveal">I see the BA role as translation: taking complex, nuanced requirements from subject-matter experts and turning them into clear, actionable input for technical delivery teams. That translation is a craft as much as a process &mdash; the differentiator is simplifying without losing context. A strong BA absorbs and resolves ambiguity rather than passing it downstream; if the delivery team inherits my open questions, I haven't done the job. All of it rests on rapport across every stakeholder level, which is why I position myself deliberately at the bridge between senior leadership, technical delivery, and day-to-day operations.</p>
+
+    <h3 class="reveal">Working AI-augmented</h3>
+    <p class="reveal">An AI-augmented BA is judged on the same output as any other BA &mdash; the difference is cycle time. I use AI to accelerate documentation and analysis drafting, then verify against source data before anything reaches a stakeholder. Verification is the non-negotiable: an unchecked AI output is an open question passed downstream, which is exactly what a BA shouldn't do.</p>
+
+    <h3 class="reveal">What I'm capable of</h3>
+    <p class="reveal">Proven delivery with Power BI, Advanced Excel, and Power Query, with working knowledge of Power Automate and intermediate SQL &mdash; tiered honestly, because scoping my own capability accurately is part of the job.</p>
+    <div class="links reveal">
+      <a class="pill pill--sm" href="{{ '/skills/skills-matrix.html' | relative_url }}">Skills matrix</a>
+      <a class="pill pill--sm" href="{{ '/roadmap.html' | relative_url }}">Roadmap 2026&ndash;2029</a>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact">
+  <div class="block__inner prose-home">
+    <h2 class="reveal">Contact</h2>
+    <p class="reveal">Four certifications in progress now, then a focused progression into process improvement and governed AI-assisted delivery across UK and GCC markets. Open to Business Analyst roles and conversations.</p>
+    <div class="links reveal">
+      <a class="pill pill--sm" href="mailto:rameessaleem7@gmail.com">Email</a>
+      <a class="pill pill--sm" href="https://www.linkedin.com/in/ramees7">LinkedIn</a>
+      <a class="pill pill--sm" href="{{ '/assets/cv/ramees-saleem-cv.pdf' | relative_url }}">Download CV (PDF)</a>
+    </div>
+    <p class="updated reveal">Last updated: {{ page.last_updated }}</p>
+  </div>
+</section>
+</main>
